@@ -4,7 +4,8 @@
 
 @theme{
     --font-display:"Open Sans",sans-serif;
-    --font-Amatic: "Amatic SC",sans-serif; 
-
-
+    --font-Amatic: "Amatic SC",sans-serif;
 }
+@element {
+    transform: var (--tw-rotate-x) rotateY(-<180>deg);
+  }
