@@ -33,13 +33,13 @@
     />
   </head>
 
-  <body class="overflow-x-hidden">
+  <body>
     <section>
-      <div class="flex items-center z-[1000] p-6">
+      <div class="flex items-center justify-between z-[1000] lg:p-6 p-2.5">
         <div>
-          <a href=""><img class="w-auto h-12" src="Logo.png" alt="" /></a>
+          <a href=""><img class="w-auto lg:h-12" src="Logo.png" alt="" /></a>
         </div>
-        <div class="flex w-full justify-center text-[16px]">
+        <div class="lg:flex w-full justify-center text-[16px] hidden">
           <ul class="flex font-display [600] text-base font-medium gap-2">
             <li class="p-3.5 hover:text-pink-400">
               <a href="">Home</a>
@@ -110,13 +110,16 @@
             </li>
           </ul>
         </div>
-        <div class="text-gray-700 ml- flex gap-9 items-center">
-          <a class="hover:text-pink-400" href=""
-            ><i class="fa-solid fa-magnifying-glass"></i
+        <div class="text-gray-700 flex items-center gap-9">
+          <a class="lg:hidden bg-amber-600" href=""
+            ><i class="fa-solid fa-bars text-[28px] hover:text-pink-400"></i
           ></a>
+          <a class="hover:text-pink-400 hidden lg:block" href=""
+            ><i class="fa-solid fa-magnifying-glass text-[22px]"></i>
+          </a>
 
           <button
-            class="font-display flex mr-[20px] text-[12px] bg-[#B562A8] text-white hover:bg-pink-400 font-bold px-13 py-2 rounded-full w-100%"
+            class="font-display lg:flex mr-[20px] text-[12px] bg-[#B562A8] text-white hover:bg-pink-400 font-bold px-13 py-2 rounded-full w-100% hidden"
           >
             <a href=""
               >AVAILABLE <br />
@@ -128,13 +131,21 @@
     </section>
     <section>
       <div class="relative font-bold">
-        <img class="w-[100%] h-[100%]" src="cat-watching.jpg" alt="" />
+        <img
+          class="lg:w-[100%] lg:h-[100%] h-[400px] w-[100%]"
+          src="cat-watching.jpg"
+          alt=""
+        />
         <div class="absolute inset-0 bg-black opacity-[0.5]"></div>
-        <div class="absolute left-17 top-35">
-          <h1 class="font-Amatic text-[100px] text-white h-67 leading-tight">
+        <div class="absolute left-17 lg:top-35 top-7 pt-[3em] pr-[7em]">
+          <h1
+            class="font-Amatic lg:text-[100px] text-[44px] text-white h-67 leading-tight flex"
+          >
             WHERE CATS'<br />DREAMS COME TRUE
           </h1>
-          <p class="text-white my-10">
+          <p
+            class="font-display font-medium textt-[16px] text-white lg:pt-5 lg:pb-8"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
             delectus <br />
             aut cumque itaque dolorum consequatur.
@@ -232,54 +243,53 @@
     </section>
 
     <section>
-      <div class="relative">
-        <div class="w-[100%] h-[100%]">
-          <img src="bg_img.png" alt="" />
-          <div class="absolute inset-0 bg-white opacity-[0.9]"></div>
-          <div class="absolute left-12 top-70 space-y-5">
-            <h2 class="font-display font-bold text-[14px] text-[#FF7F50]">
-              WHO WE ARE
-            </h2>
-            <h3
-              class="font-Amatic font-bold text-[67px] text-[#292929] leading-tight"
+      <div
+        class="relative w-full h-full bg-center bg-cover bg-no-repeat bg-[url('bg_img.png')]  "
+      >
+        <div class="absolute inset-0 bg-white opacity-[0.8]"></div>
+        <div class="flex justify-center flex-wrap mt-70 mb-30  gap-x-20">
+        <div class="relative z-10 ">
+          <h2 class="font-display font-bold text-[14px] text-[#FF7F50]">
+            WHO WE ARE
+          </h2>
+          <h3
+            class="font-Amatic font-bold text-[67px] text-[#292929] leading-tight pt-7"
+          >
+            HELP HOMELESS ANIMALS FIND A<br>
+            FOREVER HOME.
+          </h3>
+          <p class="font-display font-medium text-[16px] text-[#58585B] pt-5">
+            Aliquam lobortis imperdiet aenean magnis finibus eu potenti nostra <br>
+            sapien 
+            natoque. Non dui commodo donec felis quisque velit mauris <br> ipsum per
+            congue.
+            Ullamcorper sodales convallis cras iaculis laoreet <br> nascetur sapien.
+          </p>
+          <button class="pt-10"
+            
+          >
+            <a class="font-display font-bold text-[12px] text-white bg-[#B562A8] rounded-3xl py-3 px-8 hover:bg-pink-400" href="">DISCOVER MORE</a>
+          </button>
+        </div>
+        <div class="relative flex ">
+          
+            <img class="w-[620px] h-[447px]" src="bg_4.png" alt="" />
+            <div class="absolute">
+            <div
+              class="w-[620px] h-[447px] [mask-size:contain] [mask-reprat:no-repeat] [mask-image:url(bg_1.png)] [mask-position:center ]"
             >
-              HELP HOMELESS ANIMALS FIND A <br />
-              FOREVER HOME.
-            </h3>
-            <p class="font-display font-medium text-[16px] text-[#58585B]">
-              Aliquam lobortis imperdiet aenean magnis finibus eu potenti nostra
-              sapien <br />
-              natoque. Non dui commodo donec felis quisque velit mauris ipsum
-              per con. <br />
-              Ullamcorper sodales convallis cras iaculis laoreet nascetur
-              sapien.
-            </p>
-            <button
-              class="font-display font-bold text-[12px] text-white bg-[#B562A8] rounded-3xl py-3 px-9 hover:bg-pink-400"
-            >
-              <a href="">DISCOVER MORE</a>
-            </button>
+              <img class="w-full h-full" src="two-funny.jpg" alt="" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="relative">
-        <div class="flex absolute flex-wrap -top-[600px] right-5">
-          <img class="w-full h-full" src="bg_4.png" alt="" />
-          <div
-            class="h-full w-full absolute [mask-size:contain] [mask-reprat:no-repeat] [mask-image:url(bg_1.png)] [mask-position:center]"
-          >
-            <img class="w-full h-full" src="two-funny.jpg" alt="" />
-          </div>
         </div>
       </div>
     </section>
     <section>
       <div
-        class="relative flex justify-center items-center py-15 -top-10 border-dashed border-t-2 border-[#5252523f]"
+        class=" flex items-center  pl-22 border-dashed border-t-2 border-[#5252523f]"
       >
-        <div class="absolute flex gap-15 pt-9">
+        <div class="flex flex-wrap gap-15 py-7">
           <img src="logo-1-150x100.png" alt="" />
           <img src="logo-2-150x100.png" alt="" />
           <img src="logo-3-150x100.png" alt="" />
@@ -293,274 +303,275 @@
       <div
         class="relative bg-[#f9f1e7] w-full bg-[url('bg_5.png')] bg-center z-[1000]"
       >
-      <div
-      class="absolute inset-0 bg-gradient-to-b from-[#f9f1e7cc] to-[#f9f1e7] opacity-[1]"
-    ></div>
-    <div class="relative z-10">
-        <div class="text-center py-33 flex justify-center flex-col">
-          <h2
-            class="font-Amatic font-bold leading-tight text-[67px] text-[#292929]"
-          >
-            WE PROVIDE A WAY FOR YOU TO GIVE <br />
-            BACK TO ANIMALS IN NEED.
-          </h2>
-          <p class="font-display font-medium text-[16px] text-[#58585B]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet
-            ipsum odit <br />
-            nesciunt, id laboriosam vero eligendi illum
-          </p>
-        </div>
-        <div class="flex justify-between items-center flex-wrap mx-20">
-          <div class="relative -top-16">
-            <div class="absolute">
-              <img class="w-[280px] h-[278px]" src="bg_6.png" alt="" />
-            </div>
-            <div class="perspective-1000 group">
-              <div
-                class="h-[278px] w-[280px] [mask-size:contain] [mask-reprat:no-repeat] [mask-image:url(bg_3.png)] [mask-position:center]"
-              >
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-[#f9f1e7cc] to-[#f9f1e7] opacity-[1]"
+        ></div>
+        <div class="relative z-10">
+          <div class="text-center py-33 flex justify-center flex-col">
+            <h2
+              class="font-Amatic font-bold leading-tight text-[67px] text-[#292929]"
+            >
+              WE PROVIDE A WAY FOR YOU TO GIVE <br />
+              BACK TO ANIMALS IN NEED.
+            </h2>
+            <p class="font-display font-medium text-[16px] text-[#58585B]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              amet ipsum odit <br />
+              nesciunt, id laboriosam vero eligendi illum
+            </p>
+          </div>
+          <div class="flex justify-between items-center flex-wrap mx-20">
+            <div class="relative -top-16">
+              <div class="absolute">
+                <img class="w-[280px] h-[278px]" src="bg_6.png" alt="" />
+              </div>
+              <div class="perspective-1000 group">
                 <div
-                  class="w-full h-full overflow-hidden transition-transform duration-700 transform-style:preserve-3d group-hover:-rotate-y-180"
+                  class="h-[278px] w-[280px] [mask-size:contain] [mask-reprat:no-repeat] [mask-image:url(bg_3.png)] [mask-position:center]"
                 >
-                  <div class="block group-hover:hidden">
-                    <div
-                      class="flex flex-col text-center w-full h-full bg-white py-[3em] rotate-y-0 backface-hidden"
-                    >
+                  <div
+                    class="w-full h-full overflow-hidden transition-transform duration-700 transform-style:preserve-3d group-hover:-rotate-y-180"
+                  >
+                    <div class="block group-hover:hidden">
                       <div
-                        class="h-14 w-14 bg-[#F9F1E7] rounded-4xl m-auto flex justify-center items-center"
+                        class="flex flex-col text-center w-full h-full bg-white py-[3em] rotate-y-0 backface-hidden"
                       >
-                        <i
-                          class="fa-solid fa-paw text-[#FF7F50] text-[28px]"
-                        ></i>
+                        <div
+                          class="h-14 w-14 bg-[#F9F1E7] rounded-4xl m-auto flex justify-center items-center"
+                        >
+                          <i
+                            class="fa-solid fa-paw text-[#FF7F50] text-[28px]"
+                          ></i>
+                        </div>
+                        <h2
+                          class="font-Amatic font-bold text-[41px] text-[#292929] py-3"
+                        >
+                          CAT ADOPTION
+                        </h2>
+                        <p
+                          class="font-display font-medium text-[14px] text-[#58585B] py-[0em]"
+                        >
+                          Fringilla purus enim sodales <br />
+                          euismod sociosqu a erat ut dolor
+                        </p>
                       </div>
-                      <h2
-                        class="font-Amatic font-bold text-[41px] text-[#292929] py-3"
-                      >
-                        CAT ADOPTION
-                      </h2>
-                      <p
-                        class="font-display font-medium text-[14px] text-[#58585B] py-[0em]"
-                      >
-                        Fringilla purus enim sodales <br />
-                        euismod sociosqu a erat ut dolor
-                      </p>
                     </div>
-                  </div>
-                  <div class="hidden group-hover:block">
-                    <div
-                      class="flex flex-col text-center w-full h-[500px] bg-[#B562A8] py-[3em]"
-                    >
-                      <h2
-                        class="font-Amatic font-bold text-[25px] text-white rotate-y-180"
+                    <div class="hidden group-hover:block">
+                      <div
+                        class="flex flex-col text-center w-full h-[500px] bg-[#B562A8] py-[3em]"
                       >
-                        CAT ADOPTION
-                      </h2>
-                      <p
-                        class="font-display font-medium text-[14px] text-white py-4 rotate-y-180"
-                      >
-                        Elementum non cubilia per <br />
-                        convallis quisque inceptos. Class <br />
-                        lacinia himenaeos faucibus eros <br />
-                        auctor lectus quis.
-                      </p>
+                        <h2
+                          class="font-Amatic font-bold text-[25px] text-white rotate-y-180"
+                        >
+                          CAT ADOPTION
+                        </h2>
+                        <p
+                          class="font-display font-medium text-[14px] text-white py-4 rotate-y-180"
+                        >
+                          Elementum non cubilia per <br />
+                          convallis quisque inceptos. Class <br />
+                          lacinia himenaeos faucibus eros <br />
+                          auctor lectus quis.
+                        </p>
 
-                      <button
-                        class="font-display font-bold text-[#B562A8] text-[12px] bg-white hover:bg-pink-400 hover:text-white rounded-full mx-18 py-2 rotate-y-180"
-                      >
-                        <a href="">LEARN MORE</a>
-                      </button>
+                        <button
+                          class="font-display font-bold text-[#B562A8] text-[12px] bg-white hover:bg-pink-400 hover:text-white rounded-full mx-18 py-2 rotate-y-180"
+                        >
+                          <a href="">LEARN MORE</a>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="relative -top-16">
-            <div class="absolute">
-              <img class="w-[280px] h-[278px]" src="bg_6.png" alt="" />
-            </div>
-            <div class="perspective-1000 group">
-              <div
-                class="h-[278px] w-[280px] [mask-size:contain] [mask-reprat:no-repeat] [mask-image:url(bg_3.png)] [mask-position:center]"
-              >
+            <div class="relative -top-16">
+              <div class="absolute">
+                <img class="w-[280px] h-[278px]" src="bg_6.png" alt="" />
+              </div>
+              <div class="perspective-1000 group">
                 <div
-                  class="w-full h-full overflow-hidden transition-transform duration-700  transform-style:preserve-3d group-hover:-rotate-y-180"
+                  class="h-[278px] w-[280px] [mask-size:contain] [mask-reprat:no-repeat] [mask-image:url(bg_3.png)] [mask-position:center]"
                 >
-                  <div class="block group-hover:hidden">
-                    <div
-                      class="flex flex-col text-center w-full h-full bg-[#B562A8] py-[3em] rotate-y-0 backface-hidden"
-                    >
+                  <div
+                    class="w-full h-full overflow-hidden transition-transform duration-700 transform-style:preserve-3d group-hover:-rotate-y-180"
+                  >
+                    <div class="block group-hover:hidden">
                       <div
-                        class="h-14 w-14 bg-[#F9F1E7] rounded-4xl m-auto flex justify-center items-center"
+                        class="flex flex-col text-center w-full h-full bg-[#B562A8] py-[3em] rotate-y-0 backface-hidden"
                       >
-                        <i
-                          class="fa-solid fa-cat text-[#FF7F50] text-[28px]"
-                        ></i>
+                        <div
+                          class="h-14 w-14 bg-[#F9F1E7] rounded-4xl m-auto flex justify-center items-center"
+                        >
+                          <i
+                            class="fa-solid fa-cat text-[#FF7F50] text-[28px]"
+                          ></i>
+                        </div>
+                        <h2
+                          class="font-Amatic font-bold text-[41px] text-white py-3"
+                        >
+                          CAT TRAINING
+                        </h2>
+                        <p
+                          class="font-display font-medium text-[14px] text-white py-[0em]"
+                        >
+                          Fringilla purus enim sodales <br />
+                          euismod sociosqu a erat ut dolor
+                        </p>
                       </div>
-                      <h2
-                        class="font-Amatic font-bold text-[41px] text-white py-3"
-                      >
-                        CAT TRAINING
-                      </h2>
-                      <p
-                        class="font-display font-medium text-[14px] text-white py-[0em]"
-                      >
-                        Fringilla purus enim sodales <br />
-                        euismod sociosqu a erat ut dolor
-                      </p>
                     </div>
-                  </div>
-                  <div class="hidden group-hover:block">
-                    <div
-                      class="flex flex-col text-center w-full h-[500px] bg-[#B562A8] py-[3em]"
-                    >
-                      <h2
-                        class="font-Amatic font-bold text-[25px] text-white rotate-y-180"
+                    <div class="hidden group-hover:block">
+                      <div
+                        class="flex flex-col text-center w-full h-[500px] bg-[#B562A8] py-[3em]"
                       >
-                        CAT TRAINING
-                      </h2>
-                      <p
-                        class="font-display font-medium text-[14px] text-white py-4 rotate-y-180"
-                      >
-                        Elementum non cubilia per <br />
-                        convallis quisque inceptos. Class <br />
-                        lacinia himenaeos faucibus eros <br />
-                        auctor lectus quis.
-                      </p>
+                        <h2
+                          class="font-Amatic font-bold text-[25px] text-white rotate-y-180"
+                        >
+                          CAT TRAINING
+                        </h2>
+                        <p
+                          class="font-display font-medium text-[14px] text-white py-4 rotate-y-180"
+                        >
+                          Elementum non cubilia per <br />
+                          convallis quisque inceptos. Class <br />
+                          lacinia himenaeos faucibus eros <br />
+                          auctor lectus quis.
+                        </p>
 
-                      <button
-                        class="font-display font-bold text-[#B562A8] text-[12px] bg-white hover:bg-pink-400 hover:text-white rounded-full mx-18 py-2 rotate-y-180"
-                      >
-                        <a href="">LEARN MORE</a>
-                      </button>
+                        <button
+                          class="font-display font-bold text-[#B562A8] text-[12px] bg-white hover:bg-pink-400 hover:text-white rounded-full mx-18 py-2 rotate-y-180"
+                        >
+                          <a href="">LEARN MORE</a>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="relative -top-16">
-            <div class="absolute">
-              <img class="w-[280px] h-[278px]" src="bg_6.png" alt="" />
-            </div>
-            <div class="perspective-1000 group">
-              <div
-                class="h-[278px] w-[280px] [mask-size:contain] [mask-reprat:no-repeat] [mask-image:url(bg_3.png)] [mask-position:center]"
-              >
+            <div class="relative -top-16">
+              <div class="absolute">
+                <img class="w-[280px] h-[278px]" src="bg_6.png" alt="" />
+              </div>
+              <div class="perspective-1000 group">
                 <div
-                  class="w-full h-full overflow-hidden transition-transform duration-700  transform-style:preserve-3d group-hover:-rotate-y-180"
+                  class="h-[278px] w-[280px] [mask-size:contain] [mask-reprat:no-repeat] [mask-image:url(bg_3.png)] [mask-position:center]"
                 >
-                  <div class="block group-hover:hidden">
-                    <div
-                      class="flex flex-col text-center w-full h-full bg-white py-[3em] rotate-y-0 backface-hidden"
-                    >
+                  <div
+                    class="w-full h-full overflow-hidden transition-transform duration-700 transform-style:preserve-3d group-hover:-rotate-y-180"
+                  >
+                    <div class="block group-hover:hidden">
                       <div
-                        class="h-14 w-14 bg-[#F9F1E7] rounded-4xl m-auto flex justify-center items-center"
+                        class="flex flex-col text-center w-full h-full bg-white py-[3em] rotate-y-0 backface-hidden"
                       >
-                        <i
-                          class="fa-solid fa-hand-holding-medical text-[#FF7F50] text-[28px]"
-                        ></i>
+                        <div
+                          class="h-14 w-14 bg-[#F9F1E7] rounded-4xl m-auto flex justify-center items-center"
+                        >
+                          <i
+                            class="fa-solid fa-hand-holding-medical text-[#FF7F50] text-[28px]"
+                          ></i>
+                        </div>
+                        <h2
+                          class="font-Amatic font-bold text-[41px] text-[#292929] py-3"
+                        >
+                          REHABILITATION
+                        </h2>
+                        <p
+                          class="font-display font-medium text-[14px] text-[#58585B] py-[0em]"
+                        >
+                          Fringilla purus enim sodales <br />
+                          euismod sociosqu a erat ut dolor
+                        </p>
                       </div>
-                      <h2
-                        class="font-Amatic font-bold text-[41px] text-[#292929] py-3"
-                      >
-                        REHABILITATION
-                      </h2>
-                      <p
-                        class="font-display font-medium text-[14px] text-[#58585B] py-[0em]"
-                      >
-                        Fringilla purus enim sodales <br />
-                        euismod sociosqu a erat ut dolor
-                      </p>
                     </div>
-                  </div>
-                  <div class="hidden group-hover:block">
-                    <div
-                      class="flex flex-col text-center w-full h-[500px] bg-[#B562A8] py-[3em]"
-                    >
-                      <h2
-                        class="font-Amatic font-bold text-[25px] text-white rotate-y-180"
+                    <div class="hidden group-hover:block">
+                      <div
+                        class="flex flex-col text-center w-full h-[500px] bg-[#B562A8] py-[3em]"
                       >
-                        ANIMAL REHABILITATION
-                      </h2>
-                      <p
-                        class="font-display font-medium text-[14px] text-white py-4 rotate-y-180"
-                      >
-                        Elementum non cubilia per <br />
-                        convallis quisque inceptos. Class <br />
-                        lacinia himenaeos faucibus eros <br />
-                        auctor lectus quis.
-                      </p>
+                        <h2
+                          class="font-Amatic font-bold text-[25px] text-white rotate-y-180"
+                        >
+                          ANIMAL REHABILITATION
+                        </h2>
+                        <p
+                          class="font-display font-medium text-[14px] text-white py-4 rotate-y-180"
+                        >
+                          Elementum non cubilia per <br />
+                          convallis quisque inceptos. Class <br />
+                          lacinia himenaeos faucibus eros <br />
+                          auctor lectus quis.
+                        </p>
 
-                      <button
-                        class="font-display font-bold text-[#B562A8] text-[12px] bg-white hover:bg-pink-400 hover:text-white rounded-full mx-18 py-2 rotate-y-180"
-                      >
-                        <a href="">LEARN MORE</a>
-                      </button>
+                        <button
+                          class="font-display font-bold text-[#B562A8] text-[12px] bg-white hover:bg-pink-400 hover:text-white rounded-full mx-18 py-2 rotate-y-180"
+                        >
+                          <a href="">LEARN MORE</a>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="relative -top-16">
-            <div class="absolute">
-              <img class="w-[280px] h-[278px]" src="bg_6.png" alt="" />
-            </div>
-            <div class="perspective-1000 group">
-              <div
-                class="h-[278px] w-[280px] [mask-size:contain] [mask-reprat:no-repeat] [mask-image:url(bg_3.png)] [mask-position:center]"
-              >
+            <div class="relative -top-16">
+              <div class="absolute">
+                <img class="w-[280px] h-[278px]" src="bg_6.png" alt="" />
+              </div>
+              <div class="perspective-1000 group">
                 <div
-                  class="w-full h-full overflow-hidden transition-transform duration-700  transform-style:preserve-3d group-hover:-rotate-y-180"
+                  class="h-[278px] w-[280px] [mask-size:contain] [mask-reprat:no-repeat] [mask-image:url(bg_3.png)] [mask-position:center]"
                 >
-                  <div class="block group-hover:hidden">
-                    <div
-                      class="flex flex-col text-center w-full h-full bg-white py-[3em] rotate-y-0 backface-hidden"
-                    >
+                  <div
+                    class="w-full h-full overflow-hidden transition-transform duration-700 transform-style:preserve-3d group-hover:-rotate-y-180"
+                  >
+                    <div class="block group-hover:hidden">
                       <div
-                        class="h-14 w-14 bg-[#F9F1E7] rounded-4xl m-auto flex justify-center items-center"
+                        class="flex flex-col text-center w-full h-full bg-white py-[3em] rotate-y-0 backface-hidden"
                       >
-                        <i
-                          class="fa-solid fa-house-chimney-medical text-[#FF7F50] text-[28px]"
-                        ></i>
+                        <div
+                          class="h-14 w-14 bg-[#F9F1E7] rounded-4xl m-auto flex justify-center items-center"
+                        >
+                          <i
+                            class="fa-solid fa-house-chimney-medical text-[#FF7F50] text-[28px]"
+                          ></i>
+                        </div>
+                        <h2
+                          class="font-Amatic font-bold text-[41px] text-[#292929] py-3"
+                        >
+                          VOLUNTEERS
+                        </h2>
+                        <p
+                          class="font-display font-medium text-[14px] text-[#58585B] py-[0em]"
+                        >
+                          Fringilla purus enim sodales <br />
+                          euismod sociosqu a erat ut dolor
+                        </p>
                       </div>
-                      <h2
-                        class="font-Amatic font-bold text-[41px] text-[#292929] py-3"
-                      >
-                        VOLUNTEERS
-                      </h2>
-                      <p
-                        class="font-display font-medium text-[14px] text-[#58585B] py-[0em]"
-                      >
-                        Fringilla purus enim sodales <br />
-                        euismod sociosqu a erat ut dolor
-                      </p>
                     </div>
-                  </div>
-                  <div class="hidden group-hover:block">
-                    <div
-                      class="flex flex-col text-center w-full h-[500px] bg-[#B562A8] py-[3em]"
-                    >
-                      <h2
-                        class="font-Amatic font-bold text-[25px] text-white rotate-y-180"
+                    <div class="hidden group-hover:block">
+                      <div
+                        class="flex flex-col text-center w-full h-[500px] bg-[#B562A8] py-[3em]"
                       >
-                        VOLUNTEERS
-                      </h2>
-                      <p
-                        class="font-display font-medium text-[14px] text-white py-4 rotate-y-180"
-                      >
-                        Elementum non cubilia per <br />
-                        convallis quisque inceptos. Class <br />
-                        lacinia himenaeos faucibus eros <br />
-                        auctor lectus quis.
-                      </p>
+                        <h2
+                          class="font-Amatic font-bold text-[25px] text-white rotate-y-180"
+                        >
+                          VOLUNTEERS
+                        </h2>
+                        <p
+                          class="font-display font-medium text-[14px] text-white py-4 rotate-y-180"
+                        >
+                          Elementum non cubilia per <br />
+                          convallis quisque inceptos. Class <br />
+                          lacinia himenaeos faucibus eros <br />
+                          auctor lectus quis.
+                        </p>
 
-                      <button
-                        class="font-display font-bold text-[#B562A8] text-[12px] bg-white hover:bg-pink-400 hover:text-white rounded-full mx-18 py-2 rotate-y-180"
-                      >
-                        <a href="">LEARN MORE</a>
-                      </button>
+                        <button
+                          class="font-display font-bold text-[#B562A8] text-[12px] bg-white hover:bg-pink-400 hover:text-white rounded-full mx-18 py-2 rotate-y-180"
+                        >
+                          <a href="">LEARN MORE</a>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -569,7 +580,6 @@
           </div>
         </div>
       </div>
-    </div>
     </section>
     <section>
       <div
@@ -600,7 +610,7 @@
     </section>
     <section>
       <div
-        class="w-full h-full bg-[#f9f1e7] bg-center bg-no-repeat bg-[url('dashed.png')] z-1"
+        class="w-full h-full bg-[#f9f1e7] bg-center bg-no-repeat bg-[url('dashed.png')] z-10"
       >
         <div class="text-center pt-22">
           <h2 class="font-display font-bold text-[14px] text-[#FF7F50] py-6">
@@ -619,7 +629,9 @@
           </p>
         </div>
         <div class="flex justify-center flex-wrap gap-4 py-20">
-          <div class="w-[30%] bg-white rounded-2xl shadow-2xl overflow-hidden">
+          <div
+            class="w-full md:w-[30%] bg-white rounded-2xl shadow-2xl overflow-hidden"
+          >
             <div class="h-[320px] group w-ful relative overflow-hidden">
               <img
                 class="w-full h-full overflow-hidden object-cover transition-transform duration-600 ease-in-out group-hover:scale-120"
@@ -1044,7 +1056,7 @@
             <h2
               class="font-Amatic font-bold text-[67px] text-[#292929] leading-tight"
             >
-              OUR TEAM OF VOLUNTEERS IS TRULY <br />
+              OUR TEAM OF VOLUNTEERS IS TRULY <br>
               COMMITTED.
             </h2>
             <p class="font-display font-medium text-[16px] text-[#58585B] my-5">
@@ -1128,7 +1140,7 @@
         class="relative w-full h-[640px] bg-cover bg-center bg-no-repeat bg-[url('inside-zooshop-shelves-with-accessories-for-cats.jpg')]"
       >
         <div class="absolute inset-0 bg-[#292929] opacity-[0.5]"></div>
-        <div class="relative z-10 flex px-7 ">
+        <div class="relative z-10 flex px-7">
           <div class="bg-white pt-15 px-17 pb-10 shadow-2xl rounded-b-3xl">
             <h1 class="font-Amatic font-bold text-[67px] text-[#292929]">
               GET AN APOOINTMENT
@@ -1285,7 +1297,9 @@
             ullamcorper mattis, pulvinar dapibus leo.
           </p>
           <div class="flex justify-between gap-5 pt-12">
-            <div class="w-[640px] bg-[#F9F1E7] rounded-2xl relative">
+            <div
+              class="w-[640px] bg-[#F9F1E7] rounded-2xl overflow-hidden relative"
+            >
               <div
                 class="absolute top-0 right-0 bg-[#FF7F50] px-6 py-6 rounded-bl-full"
               >
@@ -1313,69 +1327,6 @@
                 provided all the support and guidance I needed. I highly
                 recommend them to anyone looking to find their purrfect
                 companion.
-              </p>
-            </div>
-            <div class="w-[640px] bg-[#F9F1E7] rounded-2xl relative">
-              <div
-                class="absolute top-0 right-0 bg-[#FF7F50] px-6 py-6 rounded-bl-full"
-              >
-                <i class="fa-solid fa-quote-right text-[35px] text-white"></i>
-              </div>
-              <h2 class="font-Amatic font-bold text-[25px] text-[#000000] pt-6">
-                SARAH JOHNSON
-              </h2>
-              <h2
-                class="font-display font-bold text-[12px] text-[#FF7F50] pt-1"
-              >
-                BANDUNC
-              </h2>
-              <div class="text-[#FF7F50] pt-3">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <p
-                class="font-display font-medium text-[16px] text-[#58585B] pt-5 px-10 pb-13"
-              >
-                I can't thank Meowville enough for matching me with my sweet
-                cat, Oliver. The dedication and care they showed throughout the
-                adoption process were exceptional. Oliver has become a cherished
-                member of our family, and I'm grateful to Meowville for their
-                commitment to finding forever homes for these deserving cats.
-              </p>
-            </div>
-            <div class="w-[640px] bg-[#F9F1E7] rounded-2xl relative">
-              <div
-                class="absolute top-0 right-0 bg-[#FF7F50] px-6 py-6 rounded-bl-full"
-              >
-                <i class="fa-solid fa-quote-right text-[35px] text-white"></i>
-              </div>
-              <h2 class="font-Amatic font-bold text-[25px] text-[#000000] pt-6">
-                DAVID MATT
-              </h2>
-              <h2
-                class="font-display font-bold text-[12px] text-[#FF7F50] pt-1"
-              >
-                MEDAN
-              </h2>
-              <div class="text-[#FF7F50] pt-3">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <p
-                class="font-display font-medium text-[16px] text-[#58585B] pt-5 px-10 pb-13"
-              >
-                I recently adopted my cat, Max, from Meowville, and I couldn't
-                be happier. The shelter's professionalism and genuine concern
-                for the cats' well-being impressed me. Max is a perfect fit for
-                our family, and I appreciate the ongoing support and resources
-                Meowville provides. They truly make a difference in the lives of
-                these beautiful creatures.
               </p>
             </div>
           </div>
